@@ -7,7 +7,7 @@
 ## Install
 
 ```bash
-npm install --save react-skeleton-loading
+npm install skeleton-loading-react
 ```
 
 ## Basic Usage 
@@ -18,7 +18,7 @@ that will be used to determine, for example, the length of the texts.
 
 Here is a basic example: 
 ```
-import Skeleton from 'react-skeleton-loading'
+import Skeleton from 'skeleton-loading-react'
 
 import {UserCard} from '../Components/UserCard'
 
