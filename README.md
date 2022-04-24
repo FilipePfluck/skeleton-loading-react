@@ -59,7 +59,7 @@ return(
 )
 ```
 
-![GIF example](https://github.com/FilipePfluck/react-shimmer-skeleton/blob/main/skeleton3.gif)
+![GIF example](https://github.com/FilipePfluck/react-skeleton-loading/blob/main/skeleton.gif)
 
 ## Documentation 
 
