@@ -18,7 +18,7 @@ that will be used to determine, for example, the length of the texts.
 
 Here is a basic example: 
 ```
-import Skeleton from 'skeleton-loading-react'
+import {Skeleton} from 'skeleton-loading-react'
 
 import {UserCard} from '../Components/UserCard'
 
