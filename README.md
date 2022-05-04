@@ -98,7 +98,7 @@ Instead of this:
 
 try this:
 ```
-const Wraper = ({someProps, moreProps}) => {
+const Wrapper = ({someProps, moreProps}) => {
   <ComponentA {someProps}>
     <ComponentB {moreProps}/>
   </ComponentA>
