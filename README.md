@@ -82,6 +82,33 @@ background-size: 400% 400%;
 ```
 You can change it passing `defaultStyles`, `className`, or even styling it other way, such as using styled-components
 
+## Limitations
+
+- For now, you can only pass a Component as children to the Skeleton component. If you want to just pass some HTML, please encapsulate it in a component first.
+- You can only pass one level of components, if you pass a component with a children, it wont work right now.
+
+Instead of this:
+```
+<Skeleton>
+  <ComponentA {someProps}>
+    <ComponentB {moreProps}/>
+  </ComponentA>
+</Skeleton>
+```
+
+try this:
+```
+const Wraper = ({someProps, moreProps}) => {
+  <ComponentA {someProps}>
+    <ComponentB {moreProps}/>
+  </ComponentA>
+}
+...
+<Skeleton>
+  <Wrapper someProps={...} moreProps={...}>
+</Skeleton>
+```
+
 ## License
 
 MIT © [FilipePfluck](https://github.com/FilipePfluck)
