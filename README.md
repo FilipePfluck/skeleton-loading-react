@@ -85,7 +85,7 @@ You can change it passing `defaultStyles`, `className`, or even styling it other
 ## Limitations
 
 - For now, you can only pass a Component as children to the Skeleton component. If you want to just pass some HTML, please encapsulate it in a component first.
-- You can only pass one level of components, if you pass a component with a children, it wont work right now.
+- You can only pass one level of components, if you pass a component with a child, it wont work right now.
 
 Instead of this:
 ```
