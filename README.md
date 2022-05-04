@@ -14,11 +14,12 @@ npm install skeleton-loading-react
 
 Just pass the component you want to load as a children to the Skeleton component. 
 If the children is receiving any props, you should also pass an `exampleProps` prop, which is an object with the same props that your component receives, 
-that will be used to determine, for example, the length of the texts.
+that will be used to determine, for example, the length of the texts. Notice that it is important to import the css aswell.
 
 Here is a basic example: 
 ```
 import {Skeleton} from 'skeleton-loading-react'
+import "skeleton-loading-react/dist/index.css"
 
 import {UserCard} from '../Components/UserCard'
 
