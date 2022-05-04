@@ -1,4 +1,4 @@
-# react-skeleton-loading
+# skeleton-loading-react
 
 > A react library for generating custom skeleton loading components automatically
 
