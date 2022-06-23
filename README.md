@@ -59,28 +59,35 @@ return(
 
 ![GIF example](https://github.com/FilipePfluck/react-skeleton-loading/blob/main/skeleton.gif)
 
+## Using the Skeleton Context
+
+You can wrap your application with the `SkeletonProvider`, and so, all the Skeletons contained within will be styled. 
+The SkeletonProvider receives three props: `mainColor`, `accentColor`, `angle`
+
+```
+import { SkeletonProvider } from 'skeleton-loading-react'
+
+return <SkeletonProvider mainColor='#FF0000' accentColor='#0000FF'>
+  <Skeleton 
+    isLoading={isLoading} 
+    exampleProps={{user: fakeUser}}
+  >
+    <Test user={user}>
+    </Test>
+  </Skeleton>
+</SkeletonProvider>
+```
+
 ## Documentation 
 
 The skeleton component accepts the following props: 
 - isLoading: boolean
 - exampleProps: any object (should have the same props that your component receives)
-- defaultStyles: CSSProperties (those will be added to every element considered as content, in other words, the ones that have a background)
-- className: string (will be added to the same elements as above)
-
-## Considerations
-
-If you want to change the background, it is done through the background-image property.
-This is the default background: 
-```
-background-image: linear-gradient(
-    -90deg,
-    #28262E 0%,
-    #605e67 50%,
-    #28262E 100%
-);
-background-size: 400% 400%;
-```
-You can change it passing `defaultStyles`, `className`, or even styling it other way, such as using styled-components
+- defaultStyles: CSSProperties (those will be added to every element considered as content, in other words, the ones that have a background) (optional)
+- className: string (will be added to the same elements as above) (optional)
+- mainColor: string (the Skeleton's animation main color) (optional, default: #1C1C1F)
+- accentColor: string (the Skeleton's animation accent color) (optional, default: #28282C)
+- angle: string (the Skeleton's animation angle) (optional, default: -90deg) (altering this is not recomended)
 
 ## Limitations
 
