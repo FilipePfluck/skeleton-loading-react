@@ -1,6 +1,6 @@
 {
   "name": "skeleton-loading-react",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A react library for generating custom skeleton loading components automatically",
   "author": "FilipePfluck",
   "license": "MIT",

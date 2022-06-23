@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 
-import { Skeleton } from 'react-skeleton-loading'
-import 'react-skeleton-loading/dist/index.css'
+import { Skeleton } from 'skeleton-loading-react'
+import 'skeleton-loading-react/dist/index.css'
 
 interface TestProps {
   user: {
@@ -50,11 +50,10 @@ const App = () => {
   }
 
   return <Skeleton 
-      isLoading={isLoading} 
-      exampleProps={{user: fakeUser}}
-    >
+    isLoading={isLoading} 
+    exampleProps={{user: fakeUser}}
+  >
     <Test user={user}>
-      <p>teste</p>
     </Test>
   </Skeleton>
 }
