@@ -61,7 +61,7 @@ return(
 
 ## Using the Skeleton Context
 
-You can wrap your application with the `SkeletonProvider`, and so, all the Skeletons contained within will be styled. 
+You can wrap your application with the `SkeletonProvider`, and doing so, all the Skeletons contained within will be styled. 
 The SkeletonProvider receives three props: `mainColor`, `accentColor`, `angle`
 
 ```
